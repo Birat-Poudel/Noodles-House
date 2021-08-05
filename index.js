@@ -16,6 +16,8 @@ const navSlide = () => {
             }
         })
         hamBurger.classList.toggle('toggle');
+
+        nav.classList.toggle('off');
     })
 }
 
