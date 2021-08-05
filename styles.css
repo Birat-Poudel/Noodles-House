@@ -63,10 +63,6 @@ a {
   color: var(--headings-color);
 }
 
-.account1 {
-  margin-left: 8rem;
-}
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -128,19 +124,14 @@ a {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    text-align: left;
     background-color: var(--color-nav);
-    justify-content: flex-start;
+    justify-content: space-evenly;
     transform: translateX(100%);
     transition: transform 500ms ease-in;
   }
 
-  .account1 {
-    margin-right: 8rem;
-  }
-
   .nav__links li {
-    margin: 1.75em;
+    margin: 1em;
     opacity: 0;
   }
 
@@ -152,7 +143,7 @@ a {
     transform: translateX(0%);
   }
 
-  .off {
+  .display-off {
     display: none;
   }
 }
