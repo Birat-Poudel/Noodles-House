@@ -157,3 +157,9 @@ a {
     transform: translate(0px);
   }
 }
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
