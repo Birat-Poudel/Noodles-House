@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,10 +28,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Navbar */
+
 a {
   text-decoration: none;
   color: #000000;
   letter-spacing: 1px;
+}
+
+.nav__links a:hover {
+  color: #ff0000;
 }
 
 .navbar {
@@ -120,7 +128,7 @@ a {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 13vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +138,7 @@ a {
     transform: translateX(100%);
     transition: transform 500ms ease-in;
     padding: 2em 7em 10em 7em;
-    z-index: -1;
+    z-index: 5;
   }
 
   .empty-list {
@@ -162,5 +170,125 @@ a {
   to {
     opacity: 1;
     transform: translate(0px);
+  }
+}
+
+/* Main Body */
+
+h2 {
+  color: var(--color-accent);
+  display: inline-block;
+  font-size: 4rem;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  margin-left: 1em;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__image {
+  flex-grow: 1;
+}
+
+.main__content {
+  flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.header__content {
+  margin: 1.5rem;
+}
+
+.featured-image {
+  width: 100%;
+  object-fit: cover;
+  height: 40vh;
+  opacity: 1;
+}
+
+.main__input {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  padding: 1em 2em;
+  margin: 1em 1em;
+  min-width: 80%;
+  font-size: 1.6rem;
+  box-shadow: 0px 8px 10px #dbd7d7;
+}
+
+.input__icon {
+  position: absolute;
+  right: 20%;
+  top: 73%;
+  cursor: pointer;
+}
+
+.main__input::placeholder {
+  color: #707070;
+}
+
+.chili-image {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  position: absolute;
+  right: 0%;
+  top: 18%;
+  transform: scaleX(-1.05);
+  z-index: -1;
+}
+
+.blob {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  right: 0%;
+  top: 30%;
+  z-index: -2;
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main__image {
+    width: 100%;
+  }
+
+  .main__input {
+    width: 80%;
+  }
+
+  .header__content {
+    z-index: 2;
+  }
+
+  .main__content {
+    width: 100%;
+    align-items: flex-start;
+    overflow-x: hidden;
   }
 }

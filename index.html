@@ -25,8 +25,8 @@
           <li><a href="#">Recommended</a></li>
           <li><a href="#">Contact</a></li>
           <li class="empty-list"></li>
-          <li><a class="account account1" href="#">LogIn</a></li>
-          <li><a class="account account2" href="#">SignUp</a></li>
+          <li><a class="account" href="#">LogIn</a></li>
+          <li><a class="account" href="#">SignUp</a></li>
         </ul>
         <div class="hamburger">
           <div class="line1"></div>
@@ -35,6 +35,43 @@
         </div>
       </nav>
     </header>
+    <main class="main">
+      <section class="main__image">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/featured.webp 1x" />
+          <img
+            class="featured-image"
+            src="/assets/images/featured.jpg"
+            alt="featured"
+          />
+        </picture>
+      </section>
+      <section class="main__content">
+        <div class="header__content">
+          <h2>Noodles</h2>
+          <h4>House</h4>
+        </div>
+        <h5>Hungry?</h5>
+        <input
+          class="main__input"
+          type="text"
+          placeholder="Search for cuisine..."
+        />
+        <span class="input__icon">
+          <img
+            class="search-icon"
+            src="/assets/icons/search.svg"
+            alt="search"
+          />
+          <img class="filter-icon" src="assets/icons/filter.svg" alt="filter" />
+        </span>
+        <picture class="chili-container">
+          <source type="image/webp" srcset="/assets/images/chili.webp 1x" />
+          <img class="chili-image" src="/assets/images/chili.jpg" alt="chili" />
+        </picture>
+        <img class="blob" src="/assets/icons/blob.svg" />
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
