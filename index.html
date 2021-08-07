@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <picture>
@@ -35,6 +36,8 @@
         </div>
       </nav>
     </header>
+
+    <!-- Featured -->
     <main class="main">
       <section class="main__image">
         <picture>
@@ -52,26 +55,77 @@
           <h4>House</h4>
         </div>
         <h5>Hungry?</h5>
-        <input
-          class="main__input"
-          type="text"
-          placeholder="Search for cuisine..."
-        />
-        <span class="input__icon">
-          <img
-            class="search-icon"
-            src="/assets/icons/search.svg"
-            alt="search"
+        <div class="input-wrapper">
+          <input
+            class="main__input"
+            type="text"
+            placeholder="Search for cuisine..."
           />
-          <img class="filter-icon" src="assets/icons/filter.svg" alt="filter" />
-        </span>
-        <picture class="chili-container">
-          <source type="image/webp" srcset="/assets/images/chili.webp 1x" />
-          <img class="chili-image" src="/assets/images/chili.png" alt="chili" />
-        </picture>
-        <img class="blob" src="/assets/icons/blob.svg" />
+          <div class="input__icon">
+            <img
+              class="search-icon"
+              src="/assets/icons/search.svg"
+              alt="search"
+            />
+            <img
+              class="filter-icon"
+              src="assets/icons/filter.svg"
+              alt="filter"
+            />
+          </div>
+        </div>
+        <div class="decoration-wrapper">
+          <picture class="chili-container">
+            <source type="image/webp" srcset="/assets/images/chili.webp 1x" />
+            <img
+              class="chili-image"
+              src="/assets/images/chili.png"
+              alt="chili"
+            />
+          </picture>
+          <img class="blob" src="/assets/icons/blob.svg" />
+        </div>
       </section>
     </main>
+
+    <!-- Images Section -->
+    <section class="main__images">
+      <div class="custom-shape-divider-top">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <picture class="image1-container">
+        <source
+          type="image/webp"
+          srcset="/assets/images/main/image1@2x.png 2x"
+        />
+        <img class="image1" src="assets/images/main/image1.png" alt="ramen" />
+      </picture>
+      <picture class="image2-container">
+        <source
+          type="image/webp"
+          srcset="/assets/images/main/image2@2x.png 2x"
+        />
+        <img class="image2" src="assets/images/main/image2.png" alt="ramen" />
+      </picture>
+      <picture class="image3-container">
+        <source
+          type="image/webp"
+          srcset="/assets/images/main/image3@2x.png 2x"
+        />
+        <img class="image3" src="assets/images/main/image3.png" alt="ramen" />
+      </picture>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>
