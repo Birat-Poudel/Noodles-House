@@ -64,7 +64,7 @@ const disText = () => {
         count = (count + randomNumber) % text.length;
         var newText = text[count];
         disappearingText[0].innerHTML = newText;
-    }, 3000);
+    }, 2500);
 }
 
 navSlide();

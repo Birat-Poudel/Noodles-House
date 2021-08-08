@@ -391,7 +391,7 @@ main {
 .section-heading {
   color: var(--headings-color);
   position: absolute;
-  top: -15%;
+  top: -12%;
   left: -5%;
   font-size: 1.8rem;
   font-weight: 600;
@@ -402,11 +402,12 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .chevron-icon {
   position: absolute;
-  right: 4%;
+  right: 2%;
   top: 50%;
   transition: 50ms transform ease-out;
   cursor: pointer;
@@ -508,5 +509,132 @@ main {
 
   .chevron-icon {
     display: none;
+  }
+
+  .section-heading {
+    top: -12%;
+  }
+
+  .disText {
+    z-index: 2;
+  }
+}
+
+.disText {
+  z-index: 2;
+}
+
+.second-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0 1rem 0;
+  margin-top: 5rem;
+}
+
+.second-main h5 {
+  margin-left: 0;
+}
+
+.noodles {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -7%;
+  z-index: -1;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bike {
+  width: 100px;
+  height: 100px;
+  margin-top: 2.5rem;
+}
+
+.map {
+  width: 100px;
+  height: 100px;
+  margin-top: 2.5rem;
+}
+
+.pics {
+  width: 100px;
+  height: 100px;
+  margin-top: 2.5rem;
+  width: 60%;
+}
+
+.sub-text {
+  font-size: 1.7rem;
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.second-heading {
+  color: var(--headings-color);
+  text-align: center;
+}
+
+.container-second {
+  position: relative;
+}
+
+.noodles {
+  position: absolute;
+  left: -7%;
+  height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .second-main {
+    flex-direction: column;
+  }
+
+  .content1,
+  .content2,
+  .content3 {
+    margin-bottom: 5rem;
+  }
+
+  .bike,
+  .map,
+  .pics {
+    margin-top: 1.5rem;
+  }
+
+  .noodles {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .noodles {
+    height: 30%;
+    left: -120px;
   }
 }
