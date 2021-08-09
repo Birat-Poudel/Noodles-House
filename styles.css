@@ -585,12 +585,6 @@ main {
   width: 100px;
   height: 100px;
   margin-top: 2.5rem;
-  cursor: pointer;
-  transition: transform 150ms ease-out;
-}
-
-.bike:hover {
-  transform: translateX(25px);
 }
 
 .map {
@@ -804,6 +798,7 @@ footer {
 .ft2 {
   font-size: 1.6rem;
   font-weight: 400;
+  color: #3a3a3a;
 }
 
 .ft1s,
@@ -841,6 +836,10 @@ footer {
 .copyrp {
   text-align: center;
   color: #707070;
+}
+
+.slinks {
+  color: #3a3a3a;
 }
 
 @media screen and (max-width: 768px) {
