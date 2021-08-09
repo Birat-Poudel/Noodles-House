@@ -70,6 +70,21 @@ a {
   color: var(--headings-color);
 }
 
+.login {
+  background-color: var(--color-accent);
+  border-radius: 32px;
+  padding: 1rem 2rem;
+  color: #000000;
+  box-shadow: 0 5px 5px #dbd7d7;
+}
+
+.signup {
+  border: 2px solid var(--color-accent);
+  border-radius: 32px;
+  padding: 1rem 2rem;
+  color: #000000;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -570,6 +585,12 @@ main {
   width: 100px;
   height: 100px;
   margin-top: 2.5rem;
+  cursor: pointer;
+  transition: transform 150ms ease-out;
+}
+
+.bike:hover {
+  transform: translateX(25px);
 }
 
 .map {
@@ -675,15 +696,15 @@ main {
 }
 
 .mobile1 {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
   transform: rotate(-5deg);
 }
 
 .mobile2 {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
   transform: rotate(5deg);
 }
@@ -699,6 +720,11 @@ main {
   height: 50px;
   margin-right: 1em;
   cursor: pointer;
+  transition: transform 150ms ease-out;
+}
+
+.video:hover {
+  transform: rotate(90deg);
 }
 
 .store-c {
@@ -804,10 +830,12 @@ footer {
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .logo-container__footer {
   align-self: center;
+  cursor: pointer;
 }
 
 .copyrp {
