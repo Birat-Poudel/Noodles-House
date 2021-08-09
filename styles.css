@@ -674,6 +674,20 @@ main {
   text-align: center;
 }
 
+.mobile1 {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  transform: rotate(-5deg);
+}
+
+.mobile2 {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  transform: rotate(5deg);
+}
+
 .video__text {
   color: var(--headings-color);
   font-size: 1.6rem;
@@ -701,33 +715,141 @@ main {
 
 @media screen and (max-width: 768px) {
   .c51 {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .container5th {
     flex-direction: column;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     position: relative;
+    justify-content: center;
+    align-items: center;
   }
 
   .mobile2 {
     position: absolute;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
     top: 0px;
-    right: 5px;
-    transform: rotate(2deg);
+    left: 30%;
+    transform: rotate(3deg);
   }
 
   .mobile1 {
     position: absolute;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
     left: 0;
     top: 23rem;
-    left: 5px;
-    transform: rotate(-7deg);
+    left: 19%;
     z-index: 1;
   }
 
   .c51 {
     position: absolute;
-    top: 70rem;
+    top: 65rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mobile1 {
+    left: -15px;
+  }
+  .mobile2 {
+    left: 40px;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #e4e4e4;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+}
+
+.ft1,
+.ft2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.ft1s,
+.ft2s {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #707070;
+  cursor: pointer;
+}
+
+.ft1s:hover,
+.ft2s:hover {
+  color: #ff0000;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sicons {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.logo-container__footer {
+  align-self: center;
+}
+
+.copyrp {
+  text-align: center;
+  color: #707070;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    position: relative;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100rem;
+  }
+
+  .ft2 {
+    margin-top: 2em;
+  }
+
+  .footer__text1,
+  .footer__text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slinks {
+    display: none;
+  }
+
+  .copyrp {
+    position: absolute;
+    top: 167rem;
+    right: 20%;
+    left: 20%;
+    font-size: 1.4rem;
   }
 }
