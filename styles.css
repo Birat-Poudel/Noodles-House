@@ -529,7 +529,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 0 0;
   margin-top: 5rem;
 }
 
@@ -542,7 +542,7 @@ main {
   height: 200px;
   position: absolute;
   left: -7%;
-  z-index: -1;
+  z-index: 2;
 }
 
 .content1 {
@@ -579,10 +579,11 @@ main {
 }
 
 .pics {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin-top: 2.5rem;
-  width: 60%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .sub-text {
@@ -598,10 +599,12 @@ main {
 .second-heading {
   color: var(--headings-color);
   text-align: center;
+  padding-top: 2rem;
 }
 
 .container-second {
   position: relative;
+  background-color: var(--color-secondary);
 }
 
 .noodles {
@@ -622,13 +625,17 @@ main {
   }
 
   .bike,
-  .map,
-  .pics {
+  .map {
     margin-top: 1.5rem;
+    width: 65px;
+    height: 65px;
   }
-
   .noodles {
     top: 0;
+  }
+
+  .pics {
+    width: 100%;
   }
 }
 
@@ -636,5 +643,91 @@ main {
   .noodles {
     height: 30%;
     left: -120px;
+  }
+}
+
+/* fifth layer */
+.container5th {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-secondary);
+  padding-top: 4rem;
+}
+
+.c51 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.mb-container {
+  margin-top: 3rem;
+}
+
+.mobile__text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.video__text {
+  color: var(--headings-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.video {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.store-c {
+  width: 200px;
+  height: 200px;
+  margin-top: 4rem;
+}
+
+.store {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .c51 {
+    margin-top: 1rem;
+  }
+
+  .container5th {
+    flex-direction: column;
+    padding-top: 2.5rem;
+    position: relative;
+  }
+
+  .mobile2 {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    transform: rotate(2deg);
+  }
+
+  .mobile1 {
+    position: absolute;
+    left: 0;
+    top: 23rem;
+    left: 5px;
+    transform: rotate(-7deg);
+    z-index: 1;
+  }
+
+  .c51 {
+    position: absolute;
+    top: 70rem;
   }
 }
