@@ -59,6 +59,7 @@ a {
 .navbar img {
   width: 100%;
   max-width: 80px;
+  padding-top: 0.2rem;
 }
 
 .nav__links {
@@ -140,6 +141,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+  }
   body {
     background-color: var(--color-secondary);
     overflow-x: hidden;
@@ -184,16 +194,16 @@ a {
   .display-off {
     display: none;
   }
-}
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translate(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px);
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
   }
 }
 
