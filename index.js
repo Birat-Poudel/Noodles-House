@@ -1,9 +1,14 @@
+window.addEventListener('scroll', () => {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+
 const navSlide = () => {
 
     const hamBurger = document.querySelector(".hamburger");
     const nav = document.querySelector(".nav__links");
     const navLinks = document.querySelectorAll(".nav__links li");
-
+    
     hamBurger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
 

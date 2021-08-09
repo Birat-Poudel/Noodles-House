@@ -9,7 +9,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -24,9 +24,17 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   background-color: var(--color-secondary);
+  overflow-x: hidden;
 }
 
 /* Navbar */
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
 
 a {
   text-decoration: none;
@@ -140,8 +148,9 @@ a {
   .nav__links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 100vh;
+    position: fixed;
+    top: 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,10 +169,12 @@ a {
 
   .nav__links li {
     opacity: 0;
+    margin-top: 4rem;
   }
 
   .navbar .hamburger {
     display: block;
+    z-index: 6;
   }
 
   .nav-active {
