@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best noodles place in the town." />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Noodles House | Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contactstyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <picture>
+          <img class="logo" src="/assets/icons/logo.svg" alt="logo" />
+        </picture>
+        <ul class="nav__links display-off">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#card-section">Recommended</a></li>
+          <li><a href="/contacts.html">Contact</a></li>
+          <li class="empty-list"></li>
+          <li><a class="account login" href="#">LogIn</a></li>
+          <li><a class="account signup" href="#">SignUp</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="cutext">
+      <h2 class="cuheading__text">Write us a message.</h2>
+      <p class="cuparagraph__text">
+        Lets talk about how Noodles House can help you get anything noodlies.
+      </p>
+    </section>
+
+    <section class="form-container">
+      <form class="form">
+        <div class="first-part">
+          <input id="first-name" type="text" placeholder="First name" />
+          <input id="email-address" type="email" placeholder="E-mail address" />
+          <input id="phone-number" type="text" placeholder="Phone number" />
+        </div>
+        <div class="second-part">
+          <textarea
+            id="message"
+            placeholder="Your message"
+            cols="40"
+            rows="15"
+          ></textarea>
+        </div>
+      </form>
+      <button id="submit-b" type="submit">Send message</button>
+    </section>
+  </body>
+</html>
