@@ -50,6 +50,7 @@
           class="main__input"
           type="text"
           placeholder="Search for cuisine..."
+          onkeydown="searchRamens()"
           onkeyup="searchRamens()"
           name="search"
         />
@@ -141,14 +142,9 @@
       </ol>
     </section>
     <script>
-      const searchIcon = document.querySelector(".input__icon .search-icon");
       const hamBurger = document.querySelector(".hamburger");
       const nav = document.querySelector(".nav__links");
       const navLinks = document.querySelectorAll(".nav__links li");
-
-      searchIcon.addEventListener("click", () => {
-        searchRamens();
-      });
 
       navLinks.forEach((link, index) => {
         link.addEventListener("click", () => {
