@@ -50,15 +50,15 @@
           class="main__input"
           type="text"
           placeholder="Search for cuisine..."
-          onkeydown="searchRamens()"
           onkeyup="searchRamens()"
           name="search"
         />
-        <div class="input__icon">
+        <div class="input__icon" onclick="searchRamens()">
           <img
             class="search-icon"
             src="/assets/icons/search.svg"
             alt="search"
+            onclick="searchRamens()"
           />
           <img class="filter-icon" src="assets/icons/filter.svg" alt="filter" />
         </div>
