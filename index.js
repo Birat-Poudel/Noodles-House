@@ -26,11 +26,6 @@ navLinks.forEach((link, index) => {
 })
 
 const navSlide = () => {
-
-    const hamBurger = document.querySelector(".hamburger");
-    const nav = document.querySelector(".nav__links");
-    const navLinks = document.querySelectorAll(".nav__links li");
-    
     hamBurger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
 
@@ -93,6 +88,27 @@ const disText = () => {
         disappearingText[0].innerHTML = newText;
     }, 2500);
 }
+
+const searchRamens = () => {
+    let input = document.getElementById("search__bar").value;
+    input = input.toLowerCase();
+
+    let ram = document.getElementsByClassName("ramen");
+
+    for (i=0; i<ram.length; i++){
+        if (!ram[i].innerText.toLowerCase().includes(input)){
+            ram[i].style.display="none";
+        }
+        else{
+            ram[i].style.display="list-item"
+        }
+    }
+}
+
+const main = document.getElementsByClassName("input-wrapper1");
+main[0].addEventListener('click', ()=>{
+    location.href="/search.html";
+})
 
 navSlide();
 addToCart();

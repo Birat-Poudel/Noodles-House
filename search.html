@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best noodles place in the town." />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noodles House | Search</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <picture>
+          <img class="logo" src="/assets/icons/logo.svg" alt="logo" />
+        </picture>
+        <ul class="nav__links display-off">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/search.html">Search</a></li>
+          <li><a href="/index.html#card-section">Recommended</a></li>
+          <li><a href="/contacts.html">Contact</a></li>
+          <li class="empty-list"></li>
+          <li><a class="account login" href="#">LogIn</a></li>
+          <li><a class="account signup" href="#">SignUp</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="search-bar">
+      <div class="input-wrapper">
+        <input
+          id="search__bar"
+          class="main__input"
+          type="text"
+          placeholder="Search for cuisine..."
+          name="search"
+          onkeyup="searchRamens()"
+        />
+        <div class="input__icon">
+          <img
+            class="search-icon"
+            src="/assets/icons/search.svg"
+            alt="search"
+          />
+          <img class="filter-icon" src="assets/icons/filter.svg" alt="filter" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <ol id="list">
+        <li class="ramen">
+          <div class="card card1">
+            <div class="card__image">
+              <img
+                class="card__image1"
+                src="/assets/images/main/card__image1.jpg"
+                alt="ramen noodles"
+              />
+            </div>
+            <div class="card__body">
+              <h5 class="card__heading">Wonton Chicken</h5>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="reviews">(5) 125reviews</span>
+              <div class="cta-wrapper">
+                <p class="card__price">Rs. 250</p>
+                <button class="card__button" type="submit">Add +</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="ramen">
+          <div class="card">
+            <div class="card__image">
+              <img
+                class="card__image1"
+                src="/assets/images/main/card__image2.jpg"
+                alt="ramen noodles"
+              />
+            </div>
+            <div class="card__body">
+              <h5 class="card__heading">Slurup Cilantro</h5>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="reviews">(5) 125reviews</span>
+              <div class="cta-wrapper">
+                <p class="card__price">Rs. 250</p>
+                <button class="card__button" type="submit">Add +</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="ramen">
+          <div class="card">
+            <div class="card__image">
+              <img
+                class="card__image1"
+                src="/assets/images/main/card__image3.jpg"
+                alt="ramen noodles"
+              />
+            </div>
+            <div class="card__body">
+              <h5 class="card__heading">Creamy Vegan Ramen</h5>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="reviews">(5) 125reviews</span>
+              <div class="cta-wrapper">
+                <p class="card__price">Rs. 250</p>
+                <button class="card__button" type="submit">Add +</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <script>
+      const hamBurger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".nav__links");
+      const navLinks = document.querySelectorAll(".nav__links li");
+
+      navLinks.forEach((link, index) => {
+        link.addEventListener("click", () => {
+          nav.classList.toggle("nav-active");
+          hamBurger.classList.toggle("toggle");
+          nav.classList.toggle("display-off");
+          navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = "";
+            } else {
+              link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.1
+              }s`;
+            }
+          });
+        });
+      });
+
+      const navSlide = () => {
+        hamBurger.addEventListener("click", () => {
+          nav.classList.toggle("nav-active");
+
+          navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = "";
+            } else {
+              link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.1
+              }s`;
+            }
+          });
+          hamBurger.classList.toggle("toggle");
+          nav.classList.toggle("display-off");
+        });
+      };
+
+      const searchRamens = () => {
+        let input = document.getElementById("search__bar").value;
+        input = input.toLowerCase();
+
+        let ram = document.getElementsByClassName("ramen");
+
+        for (i = 0; i < ram.length; i++) {
+          if (!ram[i].innerText.toLowerCase().includes(input)) {
+            ram[i].style.display = "none";
+          } else {
+            ram[i].style.display = "list-item";
+          }
+        }
+      };
+
+      const addToCart = () => {
+        const buttons = document.querySelectorAll(".card__button");
+
+        buttons[0].addEventListener("click", () => {
+          buttons[0].classList.toggle("card__button--active");
+          if (buttons[0].classList[1]) {
+            buttons[0].innerHTML = "Added";
+          } else {
+            buttons[0].innerHTML = "Add +";
+          }
+        });
+
+        buttons[1].addEventListener("click", () => {
+          buttons[1].classList.toggle("card__button--active");
+          if (buttons[1].classList[1]) {
+            buttons[1].innerHTML = "Added";
+          } else {
+            buttons[1].innerHTML = "Add +";
+          }
+        });
+
+        buttons[2].addEventListener("click", () => {
+          buttons[2].classList.toggle("card__button--active");
+          if (buttons[2].classList[1]) {
+            buttons[2].innerHTML = "Added";
+          } else {
+            buttons[2].innerHTML = "Add +";
+          }
+        });
+      };
+
+      navSlide();
+      addToCart();
+    </script>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2cfebc058a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

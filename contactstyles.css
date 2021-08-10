@@ -32,6 +32,7 @@ input {
   border-radius: 5px;
   border: none;
   box-shadow: 0 5px 5px #dbd7d7;
+  width: 100%;
 }
 
 .form-container {
@@ -83,12 +84,16 @@ input {
   flex-direction: column;
   justify-content: space-around;
   margin-right: 10rem;
+  flex: 1;
+  margin-left: 10rem;
 }
 
 .second-part {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: 1;
+  margin-right: 10rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,6 +107,19 @@ input {
 
   #submit-b {
     width: 40%;
+  }
+
+  .first-part,
+  .second-part {
+    flex: 1;
+  }
+
+  .first-part {
+    margin-left: 0;
+  }
+
+  .second-part {
+    margin-right: 0;
   }
 }
 

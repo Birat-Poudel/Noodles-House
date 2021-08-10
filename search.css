@@ -1,0 +1,45 @@
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.search-bar .input-wrapper {
+  justify-self: center;
+  margin: 2rem 0 2rem 0;
+  min-width: 60%;
+}
+
+li {
+  list-style: none;
+}
+
+#list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ramen .card .card__image {
+  align-self: center;
+}
+
+.ramen {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .search-bar {
+    margin-top: 10rem;
+  }
+
+  #list {
+    flex-direction: column;
+  }
+}
