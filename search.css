@@ -41,5 +41,11 @@ li {
 
   #list {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    align-self: center;
+    justify-self: center;
   }
 }
