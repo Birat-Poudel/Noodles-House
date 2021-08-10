@@ -14,7 +14,7 @@
 
 .cuparagraph__text {
   font-size: 1.8rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 2rem 0 2rem;
   color: #883000;
   line-height: 1.5;
   text-align: center;
@@ -53,8 +53,9 @@ input {
   padding: 1.5rem 2rem 1.5rem 2rem;
   cursor: pointer;
   transition: transform 150ms ease-out;
-  width: 20%;
+  width: 25%;
   align-self: center;
+  font-size: 1.8rem;
 }
 
 #submit-b::after {
@@ -99,14 +100,16 @@ input {
 @media screen and (max-width: 768px) {
   .cuheading__text {
     margin-top: 10rem;
+    font-size: 2.6rem;
   }
 
-  html {
-    font-size: 50%;
+  .cuparagraph__text {
+    font-size: 1.4rem;
   }
 
   #submit-b {
     width: 40%;
+    font-size: 1.4rem;
   }
 
   .first-part,
@@ -144,5 +147,11 @@ input {
   #submit-b {
     width: 65%;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #submit-b {
+    width: 100%;
   }
 }
