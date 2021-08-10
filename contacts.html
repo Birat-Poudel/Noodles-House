@@ -51,11 +51,35 @@
     </section>
 
     <section class="form-container">
-      <form class="form">
+      <form
+        id="form1"
+        action="https://formspree.io/f/xvodwjea"
+        method="POST"
+        class="form"
+        name="form"
+      >
         <div class="first-part">
-          <input id="first-name" type="text" placeholder="First name" />
-          <input id="email-address" type="email" placeholder="E-mail address" />
-          <input id="phone-number" type="text" placeholder="Phone number" />
+          <input
+            id="first-name"
+            type="text"
+            placeholder="First name"
+            name="First name"
+            required
+          />
+          <input
+            id="email-address"
+            type="email"
+            placeholder="E-mail address"
+            name="E-mail address"
+            required
+          />
+          <input
+            id="phone-number"
+            type="text"
+            placeholder="Phone number"
+            name="Phone number"
+            required
+          />
         </div>
         <div class="second-part">
           <textarea
@@ -63,10 +87,12 @@
             placeholder="Your message"
             cols="40"
             rows="15"
+            name="Message"
+            required
           ></textarea>
         </div>
       </form>
-      <button id="submit-b" type="submit">Send message</button>
+      <button id="submit-b" form="form1" type="submit">Send message</button>
     </section>
   </body>
 </html>
