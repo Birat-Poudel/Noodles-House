@@ -140,7 +140,7 @@ a {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   html {
     overflow-x: hidden;
   }
@@ -319,7 +319,7 @@ main {
   transform: rotate(360deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   main {
     flex-direction: column;
   }
@@ -380,7 +380,7 @@ main {
   fill: #fbe5d0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .main__images {
     width: 100%;
     flex-direction: column;
@@ -538,7 +538,7 @@ main {
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .card__list {
     flex-direction: column;
   }
@@ -649,7 +649,7 @@ main {
   height: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .second-main {
     flex-direction: column;
   }
@@ -754,7 +754,7 @@ main {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .c51 {
     margin-top: 0;
   }
@@ -865,7 +865,7 @@ footer {
   font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   footer {
     position: relative;
   }

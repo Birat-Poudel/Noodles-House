@@ -97,7 +97,7 @@ input {
   margin-right: 10rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .cuheading__text {
     margin-top: 10rem;
     font-size: 2.6rem;
